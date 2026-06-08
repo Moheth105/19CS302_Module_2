@@ -1,57 +1,46 @@
 # EX 8 C program to perform multiplication and division of two numbers using functions (without argument and without return type).
-
 ## DATE:
-08.06.2026
-
 ## AIM:
 To write a C program to perform multiplication and division of two numbers using functions (without argument and without return type).
 
 ## Algorithm
-
-1. Start the program.
-2. Declare two functions for multiplication and division.
-3. Get two numbers from the user.
-4. Call the multiplication function.
-5. Call the division function.
-6. Display the results.
-7. Stop the program.
+Start.
+Declare the variables.
+Prompt the user to enter a value.
+Read the value using scanf.
+Enter number for multiplication and division.
+End.
 
 ## Program:
-
-```c
-#include <stdio.h>
-
-int a, b;
-
-void multiply()
-{
-    printf("Multiplication = %d\n", a * b);
-}
-
-void divide()
-{
-    printf("Division = %d", a / b);
-}
-
-int main()
-{
-    scanf("%d %d", &a, &b);
-
-    multiply();
-    divide();
-
-    return 0;
+```
+#include<stdio.h> 
+void multiply(int a,int b); 
+void div(int a,int b); 
+int main () 
+{ 
+int a,b; 
+scanf("%d%d",&a,&b); 
+multiply(a,b); 
+div(a,b); 
+} 
+void multiply(int a,int b) 
+{ 
+int product; 
+product= a*b; 
+printf("Multiplication: %d",product); 
+} 
+void div(int a,int b) 
+{ 
+int result; 
+result=a/b; 
+printf("\nDivision: %d",result); 
 }
 ```
 
 ## Output:
 
-```text
-20 5
+<img width="597" height="195" alt="image" src="https://github.com/user-attachments/assets/38f908d1-4d7d-429b-97f4-8579717697d7" />
 
-Multiplication = 100
-Division = 4
-```
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
